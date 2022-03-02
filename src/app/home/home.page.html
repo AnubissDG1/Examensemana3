@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+      
+      
+            <ion-title>
+              
+
+            </ion-title>
+   </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  
+  <div class="table-responsive">
+    <h1>Univeridades</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>web_pages</th>
+				<th>country</th>
+				<th>state_province</th>
+				<th>name</th>
+				<th>alpha_two_code</th>
+                
+			</tr>
+		</thead>
+		<tbody *ngFor="let date of datos">
+			<tr>
+                <td>{{date['web_pages']}}</td>
+                <td>{{date['country']}}</td>
+                <td>{{date['state_province']}}</td>
+                <td>{{date['name']}}</td>
+                <td>{{date['alpha_two_code']}}</td>
+
+		
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
+
+</ion-content>
