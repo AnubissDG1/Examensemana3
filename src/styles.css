@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    height: 790px;
+    background-color: rgb(102, 187, 187);
+    
+    background-size: cover;
+    background-repeat:no-repeat;
+  }

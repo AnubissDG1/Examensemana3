@@ -1,17 +1,25 @@
-<ion-header>
-  <ion-toolbar>
-      
-      
-            <ion-title>
-              
 
-            </ion-title>
-   </ion-toolbar>
-</ion-header>
-<ion-content>
+<div class="container" id="log-in-form">
+    <div class="heading">
+      
+    </div>
+   
+    
+    <form (ngSubmit)="busca()" autocomplete="off">
 
-  
-  <div class="table-responsive">
+        <div class="form-group">
+            <label for="country">
+                Pais
+              </label> 
+              <input type="text" [(ngModel)]="pais" name="pais" class="form-control"  />
+        </div>
+        
+    </form>
+</div>
+
+
+
+<div class="container">
     <h1>Univeridades</h1>
 	<table>
 		<thead>
@@ -24,7 +32,7 @@
                 
 			</tr>
 		</thead>
-		<tbody *ngFor="let date of datos">
+		<tbody *ngFor="let date of uni">
 			<tr>
                 <td>{{date['web_pages']}}</td>
                 <td>{{date['country']}}</td>
@@ -37,10 +45,3 @@
 		</tbody>
 	</table>
 </div>
-
-
-
-
-
-
-</ion-content>

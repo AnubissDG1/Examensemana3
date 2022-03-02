@@ -1,0 +1,12 @@
+table {
+	
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+th{
+	padding: 15px;
+	background-color: rgba(0, 44, 109, 0.692);
+	color: #fff;
+}
